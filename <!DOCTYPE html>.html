@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Basic CSS, Cascade, and Inheritance">
+        <title>Assignment 3 - Chapter 10,11,12,15 </title>
+        <!-- Links to my external 'style.css' file here. -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Adding an internal <style> block here with at least one rule. -->
+        <style>
+            footer {
+                font-size: smaller;
+            }
+
+            /* Basic grid layout */
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+                gap: 20px; /* Adds space between the grid items */
+                margin: 20px;
+            }
+
+            .row {
+                display: flex;
+                gap: 20px; /* Adds space between columns in a row */
+            }
+
+            .column {
+                flex: 1; /* Each column takes equal space */
+                background-color: lightgray;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(53, 27, 202);">
+        <!-- Inline CSS -->
+        <h1 style="background-color: rgb(168, 167, 166); font-size: 40px;">Welcome to My Chapter 10,11,12,15 Demo</h1>
+        <p> This paragraph should demonstrate <strong>inheritance</strong>. The color and font-family are specified in the inline CSS in my body tag. The font size comes from body tag in the external CSS. </p>
+        <p style="color: darkviolet;"> I modified the color in this paragraph by using inline CSS. The font-family is specified in the inline CSS in my body tag. The font size comes from the body tag in the external CSS. </p>
+
+        <!-- Grid container with rows and columns -->
+        <div class="container">
+            <!-- Row 1 -->
+            <div class="row">
+                <div class="column">Column 1, Row 1</div>
+                <div class="column">Column 2, Row 1</div>
+                <div class="column">Column 3, Row 1</div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+                <div class="column">Column 1, Row 2</div>
+                <div class="column">Column 2, Row 2</div>
+                <div class="column">Column 3, Row 2</div>
+            </div>
+            <!-- Row 3 -->
+            <div class="row">
+                <div class="column">Column 1, Row 3</div>
+                <div class="column">Column 2, Row 3</div>
+                <div class="column">Column 3, Row 3</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Marisa Polito's Site</p>
+        </footer>
+    </body>
+</html>
