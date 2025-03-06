@@ -1,0 +1,38 @@
+/*
+  style.css - Assignment 3 
+  ----------------------------------------------------------
+  References:
+    - External vs. Internal vs. Inline CSS
+    - Cascade (specificity, order)
+    - Inheritance (how child elements get parent properties)
+*/
+
+/* Example for body
+   (this might demonstrate inheritance if your <p> or <h1>
+   doesn't override these styles)
+*/
+body {
+	/* I picked a light background color with a dark font color.
+       I like the font arial.  
+  */
+	color: #121212;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	background-color: #c7f1f3;
+}
+
+/* Example: style your <h1> externally here */
+h1 {
+	/* Competes with our inline CSS. */
+	background-color: #1b10f0;
+}
+
+/*
+    Add more rules if desired:
+    - Paragraphs (p)
+    - Footer
+    - etc.
+  */
+p {
+	color: rgb(11, 11, 11);
+}
